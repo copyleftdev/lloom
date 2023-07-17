@@ -1,0 +1,55 @@
+metadata:
+  version: 1.0
+  last_updated: "2023-07-15"
+  author: "kassouline"
+  description: "Configuration for a language application that allows users to query the President's State of the Union address using GPT, despite it not being present in the training data."
+
+entities:
+  models:
+    - turbo:
+      name: gpt-3.5-turbo-0613
+      kind: chat
+      provider: openai
+    - ada-embeddings:
+      name: text-embedding-ada-002
+      kind: embedding
+      provider: openai
+  stores: 
+    - sotu_db:
+      collection: sotu
+      provider: faiss
+      schema: 
+        - position int
+        - word_count int
+      embedding-model: ada-002
+  datasets:
+    - sotu_raw:
+      source: sotu.txt
+      format: txt
+      tokens_per_document: 100
+      token_overlap: 20
+      store: sotu_db
+  agents:
+    - helpful_assistant:
+      model: turbo
+      system_statement: "I am an AI with a specialty in American political science. How can I assist you today?"
+      filename: helpful_assistant.txt
+      variables:
+        - query str
+
+routines:
+  query_the_sotu:
+    trigger: user_input
+    steps:
+      - retrieve_relevant_documents:
+         store: sotu_db
+         k_neighbors: 5
+         algorithm: cosine_similarity
+      - chat:
+         agent: helpful_assistant
+  initialization:
+    trigger: on_launch
+    steps:
+      - load_dataset:
+         store: sotu_db
+         dataset: sotu_raw

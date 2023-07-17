@@ -1,0 +1,9 @@
+__pycache__
+.coverage*
+db
+test_db
+nb/test.ipynb
+.DS_Store
+.ipy*
+.ruff_cache
+.pytest_cache

@@ -13,15 +13,14 @@ def test_load_textfile_dataset(tmp_path):
 
     dataset = TextfileDataset(
         source=str(text_file),
-        format="txt",
         tokens_per_document=10,
         token_overlap=5,
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     ids = dataset.load()
     corpus.get(ids=ids)
@@ -37,16 +36,15 @@ def test_load_csvfile_dataset(tmp_path):
 
     dataset = CSVfileDataset(
         source=str(csv_file),
-        format="csv",
         tokens_per_document=10,
         token_overlap=5,
         text_field="text",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     ids = dataset.load()
     corpus.get(ids=ids)
@@ -66,12 +64,11 @@ def test_load_csvfile_dataset_invalid_field(tmp_path):
     ):
         dataset = CSVfileDataset(
             source=str(csv_file),
-            format="csv",
             tokens_per_document=10,
             token_overlap=5,
             text_field="text",
             collection_name="test_collection",
-            persistent_dir=TEST_DB_DIR,
+            persistent_directory=TEST_DB_DIR,
         )
         dataset.load()
 
@@ -82,11 +79,10 @@ def test_load_csvfile_dataset_no_files(tmp_path):
     ):
         dataset = CSVfileDataset(
             source=str(tmp_path / "*.csv"),
-            format="csv",
             tokens_per_document=10,
             token_overlap=5,
             text_field="text",
             collection_name="test_collection",
-            persistent_dir=TEST_DB_DIR,
+            persistent_directory=TEST_DB_DIR,
         )
         dataset.load()

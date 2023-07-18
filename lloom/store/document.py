@@ -15,7 +15,7 @@ class Document:
         collection_name: str,
         id: str = None,
         document: str = None,
-        persistent_dir: str = "./db",
+        persistent_directory: str = "./db",
         **kwargs,
     ):
         self.id = id
@@ -23,7 +23,7 @@ class Document:
         self._update_attributes(kwargs)
 
         self.chroma_client = ChromaClient(
-            collection_name=collection_name, persistent_directory=persistent_dir
+            collection_name=collection_name, persistent_directory=persistent_directory
         )
 
         if self.id is None:
@@ -83,13 +83,13 @@ class Corpus:
     query_results: dict = None
     get_results: dict = None
     result_index: int = 0
-    persistent_dir: str = "./db"
+    persistent_directory: str = "./db"
     documents: list = None
 
     def __post_init__(self):
         self.chroma_client = ChromaClient(
             collection_name=self.collection_name,
-            persistent_directory=self.persistent_dir,
+            persistent_directory=self.persistent_directory,
         )
 
         if self.documents is None:
@@ -120,7 +120,7 @@ class Corpus:
                 Document(
                     id=_id,
                     collection_name=self.collection_name,
-                    persistent_dir=self.persistent_dir,
+                    persistent_directory=self.persistent_directory,
                 )
             )
 

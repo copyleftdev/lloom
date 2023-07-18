@@ -10,22 +10,20 @@ class CSVfileDataset(Dataset):
     def __init__(
         self,
         source: str,
-        format: str,
         tokens_per_document: int,
         token_overlap: int,
         text_field: str,
         collection_name: str,
         encoding_name: str = "cl100k_base",
-        persistent_dir: str = "./db",
+        persistent_directory: str = "./db",
     ):
         self.source = source
-        self.format = format
         self.tokens_per_document = tokens_per_document
         self.token_overlap = token_overlap
         self.text_field = text_field
         self.encoding_name = encoding_name
         self.collection_name = collection_name
-        self.persistent_dir = persistent_dir
+        self.persistent_directory = persistent_directory
 
     def load(self):
         file_paths = glob.glob(self.source)
@@ -63,7 +61,7 @@ class CSVfileDataset(Dataset):
             document = Document(
                 document=text,
                 collection_name=self.collection_name,
-                persistent_dir=self.persistent_dir,
+                persistent_directory=self.persistent_directory,
             )
             ids.append(document.id)
 

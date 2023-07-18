@@ -12,11 +12,13 @@ def test_Document_initialization():
     document = Document(
         document="Test Document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     assert document.document == "Test Document"
     document_from_chroma = Document(
-        collection_name="test_collection", id=document.id, persistent_dir=TEST_DB_DIR
+        collection_name="test_collection",
+        id=document.id,
+        persistent_directory=TEST_DB_DIR,
     )
     assert document_from_chroma.document == "Test Document"
 
@@ -25,15 +27,19 @@ def test_Document_update():
     document = Document(
         document="Test Document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document_from_chroma = Document(
-        collection_name="test_collection", id=document.id, persistent_dir=TEST_DB_DIR
+        collection_name="test_collection",
+        id=document.id,
+        persistent_directory=TEST_DB_DIR,
     )
     assert document_from_chroma.document == "Test Document"
     document.update(document="Updated Document")
     document_from_chroma = Document(
-        collection_name="test_collection", id=document.id, persistent_dir=TEST_DB_DIR
+        collection_name="test_collection",
+        id=document.id,
+        persistent_directory=TEST_DB_DIR,
     )
     assert document_from_chroma.document == "Updated Document"
     assert document.document == "Updated Document"
@@ -42,7 +48,7 @@ def test_Document_update():
 def test_Corpus_initialization():
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     assert len(corpus) == 0
 
@@ -51,11 +57,11 @@ def test_Corpus_append():
     document = Document(
         document="Test Document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus.append(document)
     assert len(corpus) == 1
@@ -66,17 +72,17 @@ def test_Corpus_iteration():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     for i, document in enumerate(corpus):
@@ -87,17 +93,17 @@ def test_Corpus_str():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     assert str(corpus) == "\n\n".join(
@@ -109,17 +115,17 @@ def test_Corpus_merge_documents():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     assert corpus.merge_documents() == "\n\n".join(
@@ -131,17 +137,17 @@ def test_Corpus_to_dict():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     documents_dict = corpus.to_dict()
@@ -158,17 +164,17 @@ def test_Corpus_to_json():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     documents_json = corpus.to_json()
@@ -180,17 +186,17 @@ def test_Corpus_to_pandas():
     document1 = Document(
         document="Test Document 1",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document2 = Document(
         document="Test Document 2",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
         documents=[document1, document2],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
     df = corpus.to_pandas()
@@ -209,21 +215,21 @@ def example_document():
     return Document(
         document="example document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
 
 
 def test_corpus_init(example_document):
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     assert len(corpus) == 0
 
     corpus = Corpus(
         collection_name="test_collection",
         documents=[example_document],
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     assert len(corpus) == 1
 
@@ -232,11 +238,11 @@ def test_corpus_get():
     example_document = Document(
         document="another example document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     document_id = example_document.id
 
@@ -249,12 +255,12 @@ def test_corpus_get():
 def test_corpus_query():
     corpus = Corpus(
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     example_document = Document(
         document="yet another example document",
         collection_name="test_collection",
-        persistent_dir=TEST_DB_DIR,
+        persistent_directory=TEST_DB_DIR,
     )
     corpus.append(example_document)
     document_id = example_document.id

@@ -6,31 +6,24 @@ metadata:
 
 entities:
   models:
-    - turbo:
+    turbo:
       name: gpt-3.5-turbo-0613
       kind: chat
       provider: openai
-    - ada-embeddings:
-      name: text-embedding-ada-002
-      kind: embedding
-      provider: openai
   stores: 
-    - sotu_db:
+    sotu_db:
       collection: sotu
       provider: chroma
-      schema: 
-        - position int
-        - word_count int
-      embedding-model: ada-002
+      persistent_directory: ./test_db
   datasets:
-    - sotu_raw:
-      source: sotu.txt
+    sotu_raw:
+      source: ./tests/sotu.txt
       format: txt
       tokens_per_document: 100
       token_overlap: 20
       store: sotu_db
   agents:
-    - helpful_assistant:
+    helpful_assistant:
       model: turbo
       system_statement: "I am an AI with a specialty in American political science. How can I assist you today?"
       filename: helpful_assistant.txt

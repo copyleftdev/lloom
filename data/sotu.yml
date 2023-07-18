@@ -17,7 +17,7 @@ entities:
   stores: 
     - sotu_db:
       collection: sotu
-      provider: faiss
+      provider: chroma
       schema: 
         - position int
         - word_count int

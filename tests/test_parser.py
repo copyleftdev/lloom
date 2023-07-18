@@ -1,10 +1,7 @@
-import pytest
-
 from lloom import Lloom
 from lloom.store.chroma import ChromaClient
 
 
-@pytest.mark.focus
 def test_create_objects_from_yaml():
     file_path = "./tests/sotu.yml"
     lloom = Lloom(file_path=file_path)

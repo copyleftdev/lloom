@@ -4,6 +4,7 @@ ipdb
 ipykernel
 isort
 openai
+pystache
 pytest
 pytest-cov
 requests

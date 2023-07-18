@@ -1,1 +1,1 @@
-from .openai import AdaModel, ChatModel
+from .openai import AdaModel, ChatModel  # noqa: F401

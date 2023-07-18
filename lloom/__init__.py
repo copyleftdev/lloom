@@ -1,5 +1,6 @@
 import yaml
 
+from lloom.agent import Agent
 from lloom.dataset.csvfile_dataset import CSVfileDataset
 from lloom.dataset.textfile_dataset import TextfileDataset
 from lloom.model.openai import AdaModel, ChatModel
@@ -18,12 +19,13 @@ class Lloom:
         data = yaml.safe_load(self.yaml_data)
 
         entities = data.get("entities", {})
-        models = entities.get("models", [])
-        stores = entities.get("stores", [])
-        datasets = entities.get("datasets", [])
+        models = entities.get("models", {})
+        stores = entities.get("stores", {})
+        datasets = entities.get("datasets", {})
+
+        agents = data.get("agents", {})
 
         model_objects = {}
-
         for model_name, model_info in models.items():
             if model_info["kind"] == "chat":
                 model_params = {
@@ -40,8 +42,9 @@ class Lloom:
                 ada_model = AdaModel(**model_params)
                 model_objects[model_name] = ada_model
 
-        store_objects = {}
+        self.models = model_objects
 
+        store_objects = {}
         for store_name, store_info in stores.items():
             if store_info["provider"] == "chroma":
                 chroma_client_args = {
@@ -63,9 +66,9 @@ class Lloom:
                     **chroma_client_args,
                 )
                 store_objects[store_name] = chroma_client
+        self.stores = store_objects
 
         dataset_objects = {}
-
         for dataset_name, dataset_info in datasets.items():
             store = store_objects[dataset_info["store"]]
 
@@ -91,9 +94,21 @@ class Lloom:
                 )
             dataset.load()
             dataset_objects[dataset_name] = dataset
+        self.datasets = dataset_objects
 
-        self.objects = {
-            "models": model_objects,
-            "stores": store_objects,
-            "datasets": dataset_objects,
-        }
+        agent_objects = {}
+        for agent_name, agent_info in agents.items():
+            model = model_objects[agent_info["model"]]
+            prompt = agent_info["prompt"]
+            input = agent_info["input"]
+            system_statement = agent_info.get("system_statement", None)
+
+            agent = Agent(
+                name=agent_name,
+                model=model,
+                prompt=prompt,
+                input=input,
+                system_statement=system_statement,
+            )
+            agent_objects[agent_name] = agent
+        self.agents = agent_objects

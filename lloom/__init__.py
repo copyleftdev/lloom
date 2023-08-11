@@ -1,114 +1,160 @@
+import chromadb
 import yaml
 
-from lloom.agent import Agent
-from lloom.dataset.csvfile_dataset import CSVfileDataset
-from lloom.dataset.textfile_dataset import TextfileDataset
-from lloom.model.openai import AdaModel, ChatModel
-from lloom.store.chroma import ChromaClient
+from .agent import ChatModel
+from .dataset.textfile_dataset import TextfileDataset
 
 
-class Lloom:
+def parse_path_or_data(yaml_data=None, file_path=None):
+    if file_path:
+        with open(file_path, "r") as file:
+            yaml_data = file.read()
+    return yaml.safe_load(yaml_data)
+
+
+class Parser:
     def __init__(self, yaml_data=None, file_path=None):
-        if file_path:
-            with open(file_path, "r") as file:
-                self.yaml_data = file.read()
-        else:
-            self.yaml_data = yaml_data
+        assert (
+            yaml_data is not None or file_path is not None
+        ), "Must provide yaml_data or file_path"
+        self.data = parse_path_or_data(yaml_data=yaml_data, file_path=file_path)
 
-    def create_objects_from_yaml(self):
-        data = yaml.safe_load(self.yaml_data)
 
-        entities = data.get("entities", {})
-        models = entities.get("models", {})
-        stores = entities.get("stores", {})
-        datasets = entities.get("datasets", {})
+class Migration(Parser):
+    def __init__(self, yaml_data=None, file_path=None):
 
-        agents = data.get("agents", {})
+        super().__init__(yaml_data=yaml_data, file_path=file_path)
 
-        model_objects = {}
-        for model_name, model_info in models.items():
-            if model_info["kind"] == "chat":
-                model_params = {
-                    "name": model_info["name"],
-                }
-                if "organization" in model_info:
-                    model_params["organization"] = model_info["organization"]
-                chat_model = ChatModel(**model_params)
-                model_objects[model_name] = chat_model
-            elif model_info["kind"] == "embedding":
-                model_params = {}
-                if "organization" in model_info:
-                    model_params["organization"] = model_info["organization"]
-                ada_model = AdaModel(**model_params)
-                model_objects[model_name] = ada_model
+        entities = self.data.get("entities", {})
+        stores_data = entities.get("stores", {})
+        datasets_data = entities.get("datasets", {})
 
-        self.models = model_objects
+        self.stores = self._load_stores(stores_data)
+        self.datasets = self._load_dataset(datasets_data, self.stores)
 
-        store_objects = {}
-        for store_name, store_info in stores.items():
-            if store_info["provider"] == "chroma":
-                chroma_client_args = {
-                    "collection_name": store_info["collection"],
-                }
-                if "persistent_directory" in store_info:
-                    chroma_client_args["persistent_directory"] = store_info[
-                        "persistent_directory"
-                    ]
-                if (
-                    "embedding_model" in store_info
-                    and store_info["embedding_model"] == "ada"
-                ):
-                    chroma_client_args["use_openai"] = True
-                else:
-                    chroma_client_args["use_openai"] = False
+    def run_migration(self):
+        for dataset in self.datasets.values():
+            dataset.load()
 
-                chroma_client = ChromaClient(
-                    **chroma_client_args,
-                )
-                store_objects[store_name] = chroma_client
-        self.stores = store_objects
+        return self.stores, self.datasets
 
+    def _load_dataset(self, datasets_data, store_objects):
         dataset_objects = {}
-        for dataset_name, dataset_info in datasets.items():
-            store = store_objects[dataset_info["store"]]
+        for dataset_name, dataset_info in datasets_data.items():
+            collection = store_objects[dataset_info["store"]]
 
-            if dataset_info["format"] == "csv":
-                dataset = CSVfileDataset(
-                    source=dataset_info["source"],
-                    format=dataset_info["format"],
-                    tokens_per_document=dataset_info["tokens_per_document"],
-                    token_overlap=dataset_info["token_overlap"],
-                    text_field=dataset_info["text_field"],
-                    collection_name=store.collection.name,
-                    persistent_directory=store.persistent_directory,
-                    use_openai=store.use_openai,
-                )
-            elif dataset_info["format"] == "txt":
+            if dataset_info["format"] == "txt":
                 dataset = TextfileDataset(
                     source=dataset_info["source"],
                     tokens_per_document=dataset_info["tokens_per_document"],
                     token_overlap=dataset_info["token_overlap"],
-                    collection_name=store.collection.name,
-                    persistent_directory=store.persistent_directory,
-                    use_openai=store.use_openai,
+                    collection=collection,
                 )
-            dataset.load()
+            elif dataset_info["format"] == "pdf":
+                dataset = PDFDataset(
+                    source=dataset_info["source"],
+                    tokens_per_document=dataset_info["tokens_per_document"],
+                    token_overlap=dataset_info["token_overlap"],
+                    collection=collection,
+                )
             dataset_objects[dataset_name] = dataset
-        self.datasets = dataset_objects
+
+        return dataset_objects
+
+    def _load_stores(self, stores_data):
+        in_memory = sum(
+            [store.get("in_memory", False) for store in stores_data.values()]
+        )
+        served = sum(
+            [not store.get("in_memory", False) for store in stores_data.values()]
+        )
+
+        if in_memory > 0:
+            self.in_memory_client = chromadb.Client()
+        if served > 0:
+            self.remote_client = chromadb.HttpClient()
+
+        store_objects = {}
+        for store_name, store_info in stores_data.items():
+            chroma_collection_args = {
+                "collection_name": store_info["collection"],
+            }
+
+            if store_info["provider"] == "chroma":
+                if store_info.get("in_memory", False):
+                    client = self.in_memory_client
+                else:
+                    client = self.remote_client
+
+                chroma_collection_args = {
+                    "name": store_info["collection"],
+                }
+                if (
+                    "embedding_model" in store_info
+                    and store_info["embedding_model"] == "openai/ada"
+                ):
+                    import os
+
+                    from chromadb.utils.embedding_functions import \
+                        OpenAIEmbeddingFunction
+
+                    openai_api_key = os.environ.get("OPENAI_API_KEY")
+                    openai_ef = OpenAIEmbeddingFunction(
+                        api_key=openai_api_key, model_name="text-embedding-ada-002"
+                    )
+                    chroma_collection_args["embedding_function"] = openai_ef
+                store_objects[store_name] = client.get_or_create_collection(
+                    **chroma_collection_args
+                )
+
+            return store_objects
+
+
+class Supervisor(Parser):
+    def __init__(self, yaml_data=None, file_path=None):
+        super().__init__(yaml_data, file_path)
+
+        agents_data = self.data.get("agents", {})
+
+        self.agents = self._load_agents(agents_data)
+
+    def _load_agents(self, agents_data):
 
         agent_objects = {}
-        for agent_name, agent_info in agents.items():
-            model = model_objects[agent_info["model"]]
+        for agent_name, agent_info in agents_data.items():
+            model = agent_info["model"]
             prompt = agent_info["prompt"]
             input = agent_info["input"]
             system_statement = agent_info.get("system_statement", None)
 
-            agent = Agent(
-                name=agent_name,
-                model=model,
-                prompt=prompt,
-                input=input,
-                system_statement=system_statement,
-            )
+            agent = {
+                "model": model,
+                "prompt": prompt,
+                "input": input,
+                "system_statement": system_statement,
+            }
             agent_objects[agent_name] = agent
-        self.agents = agent_objects
+        return agent_objects
+
+
+class Lloom(Migration, Supervisor):
+    def __init__(
+        self,
+        yaml_data=None,
+        file_path=None,
+        datasets=None,
+        stores=None,
+        perform_migration=False,
+    ):
+        super().__init__(yaml_data=yaml_data, file_path=file_path)
+
+        metadata_data = self.data.get("metadata", {})
+
+        self._parse_metadata(metadata_data)
+
+        if perform_migration:
+            self.run_migration()
+
+    def _parse_metadata(self, metadata_data):
+        for key, value in metadata_data.items():
+            setattr(self, key, value)

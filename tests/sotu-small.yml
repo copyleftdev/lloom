@@ -1,0 +1,52 @@
+metadata:
+  title: Query the State of the Union
+  version: 1.0
+  last_updated: "2023-07-15"
+  author: "kassouline"
+  description: "Query the President's State of the Union address using GPT, despite it not being present in the training data."
+
+entities:
+  models:
+    turbo:
+      name: gpt-3.5-turbo-0613
+      kind: chat
+      provider: openai
+  stores: 
+    sotu_db:
+      collection: sotu
+      provider: chroma
+      in_memory: true
+      embedding_model: openai/ada
+  datasets:
+    sotu_raw:
+      source: ./tests/sotu-small.txt
+      format: txt
+      tokens_per_document: 1000
+      token_overlap: 100
+      store: sotu_db
+
+agents:
+  helpful_assistant:
+    model: turbo
+    system_statement: "I am an AI with a specialty in American political science. How can I assist you today?"
+    prompt: |
+      Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+      {{context}}
+
+      Question: {{query}}
+      Helpful Answer:
+    input:
+      - context
+      - query
+
+routines:
+  query_the_sotu:
+    trigger: user_input
+    steps:
+      retrieve_relevant_documents:
+         store: sotu_db
+         k_neighbors: 5
+         algorithm: cosine_similarity
+      chat:
+         agent: helpful_assistant

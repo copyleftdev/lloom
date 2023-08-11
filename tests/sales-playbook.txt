@@ -1,0 +1,1369 @@
+﻿SALES PLAYBOOK
+
+
+
+
+
+
+Updated: September 14, 2020
+________________
+Table of Contents
+
+
+Zoho CRM Set Up        4
+Blurbs about Capabilities, Services, Etc.        5
+Elevator Pitch (creative agencies and brands)        5
+Elevator Pitch (market research companies)        5
+Elevator Pitch (training companies)        5
+“Tell Me More About Your Services”        5
+I don’t want to hear anymore. Just tell me your per word rates!        6
+Email Playbook        7
+Quick Question Email Templates        7
+QQ Target = Advertising and Creative Agencies        7
+QQ Target = Marketing Departments        8
+QQ Target = Training Departments        9
+QQ Target = Paid Search & Paid Social Departments        10
+Responses to QQ Emails        11
+RESPONSE = “I have these needs and I’d like to better understand what you offer.”        11
+RESPONSE = “Send me more info and your pricing.”        12
+RESPONSE = “I have these needs and I’ll keep your information handy.”        13
+RESPONSE = “I will share your info with my team.”        14
+RESPONSE = “This isn’t my area, but I’ve copied my colleague that handles this.”        15
+RESPONSE = “This isn’t my area, but you should reach out to [colleague’s name]”        16
+RESPONSE = “I don’t have these needs.”        18
+RESPONSE = “We have an internal team that handles this.”        19
+RESPONSE = “We already have a provider.”        20
+RESPONSE = “My agency is part of [holding company] and we have internal partners that handle this.”        21
+RESPONSE = “Stop emailing me”        22
+Emails to use after discovery calls and to deliver bids        23
+After a discovery call (with samples included)        23
+To include when you email a first time bid        24
+Emails when we lose        25
+Loss email with creds deck attached (use this if they haven’t seen our deck before)        25
+Loss email with no deck attached (use this if they already know some things about us)        25
+Check-In Emails        26
+What’s New (existing lead)        26
+What’s New (dormant client)        26
+What’s New (dormant Business Affairs client)        26
+What’s New (existing regular client)        27
+What’s New (didn’t have immediate needs at the time)        27
+Already had a partner at the time        28
+Asked you to follow up later in the year        29
+Blurbs for Email about Capabilities, Services, Etc.        30
+“What do you do?”        30
+“Tell Me More About Your Services”        30
+I don’t want to hear anymore. Just tell me your per word rates!        30
+Linked-In Playbook        32
+General Connection Requests (if they looked at you)        32
+Message for Advertising Agencies        32
+Message for Marketing        32
+Message for Training        32
+Specific Connection Requests        33
+Message for Account Directors        33
+Message for Agency Producers        33
+Message for Video/Digital Producers        33
+Message for Corporate Marketing Departments        33
+People Who Connect first        34
+Soft First Response        34
+Targeted Response        34
+What is transcreation?        34
+General Check-in Messages        35
+General Check-in for Advertisers        35
+Targeted Check-in Messages        36
+For Agency contacts        36
+For Corporate Marketing contacts        36
+Seasonal Check-in        36
+New Job Check-in        36
+
+
+________________
+Zoho CRM Set Up
+1. Log in to your Zoho CRM account.
+2. Go to Setup > Marketplace > Microsoft > Zoho CRM Plug-in for Microsoft Outlook.
+3. In the Outlook Plug-in page, select the Microsoft Outlook version from the drop-down list.
+4. Click Download to get the installation file.
+5. Run the ZohoCRM_Plugin_for_Microsoft_Outlook.exe file.
+6. In the Welcome to the Installation Wizard dialog, click Next.
+7. In the License Agreement dialog box, click Yes to accept the license agreement.
+8. In the Choose Destination Location dialog box, browse the directory and click Next.
+9. In the Installation Completed dialog box, click Finish to complete the installation.
+
+
+10. After installing, open Outlook and click on the “Zoho CRM” menu in the toolbar. Access your settings under Menu. 
+
+
+  
+
+11. Under Email check the box next to add outgoing emails to Zoho CRM automatically and make sure the bottom 2 boxes are not checked.  
+
+
+  
+
+________________
+Blurbs about Capabilities, Services, Etc.
+
+
+Elevator Pitch (creative agencies and brands)
+
+
+InterEcho is specifically focused on adapting marketing and advertising creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural appropriateness in mind. Translation companies tend to be way too literal when handling marketing content, and they rarely offer international voiceover and video production services to see it all the way through, so InterEcho has filled this void for brands and creative agencies that operate globally.
+
+
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. 
+
+
+In addition to video, we regularly localize websites, mobile apps, creative pitch decks, and other content related to our client’s global operations.
+
+
+Elevator Pitch (market research companies)
+
+
+InterEcho is specifically focused on adapting market research surveys and marketing creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural appropriateness in mind. Translation companies tend to be way too literal when handling survey content, and they rarely offer full localization services to see it all the way through to survey respondents, so InterEcho has filled this void for brands and research agencies that operate globally. 
+ 
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for the types of brands we work with – https://interecho.com/our-work. Although these samples highlight our video services, we regularly localize research surveys, websites, mobile apps, and other content related to our client’s global operations.
+
+
+
+
+Elevator Pitch (training companies)
+
+
+InterEcho is specifically focused on adapting training and development creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural appropriateness in mind. Translation companies tend to be way too literal when handling training material, and they rarely offer voiceover and video production services to see it all the way through, so InterEcho has filled this void for brands and training companies that operate globally. 
+ 
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for the types of brands we work with – https://interecho.com/our-work.  Although these samples highlight our creative services related to video, we regularly localize eLearning courses, LMS content, surveys, websites, and other content related to our client’s global training operations.
+
+
+
+
+“Tell Me More About Your Services”
+
+
+We’re quite a bit different than most translation companies that tend to service a lot of various industries and departments.  We’re focused strictly on marketing and advertising content, so our processes are designed to accommodate creative copy that doesn’t easily translate, as well as expedited deadlines that most advertisers must work under. We also have full-service production capabilities, so we regularly work with our client’s native creative assets and video masters so the work we deliver is market-ready.
+
+
+We don’t really “translate” content per se.  Our resources are local copywriters that produce culturally relevant content that feels genuine and fluid in the target market.  Our goal is for the content we deliver to feel like it was originally crafted in the target language.  All of our linguistic resources are native-speakers of the target language and they reside in country to ensure the most current knowledge of cultural nuances, language proficiency, and local industry terminology. 
+
+
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. 
+
+
+
+
+I don’t want to hear anymore. Just tell me your per word rates!
+
+
+Cost for copy transcreation can range anywhere from $0.18/word to $0.42/word depending on target language, content volume, and deliverable requirements. To add some more perspective to this, I have attached an example of our transcreation deck, which is what you can expect to receive from us for in-language copy. 
+
+
+Unlike most general translation companies, we always include English back-translations and commentary explaining our word choices so that you fully understand how the messaging is handled for each market.  Since we’re solely focused on adapting marketing and advertising content that is culturally nuanced and can’t be translated literally, the linguistic resources we utilize are more like in-language copywriters versus translators.
+
+
+I have also included our capabilities deck and the following is a short list of our services. I appreciate your willingness to pass along our information to the appropriate parties.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+- Global SEO and SEM
+
+
+(Use the transcreation examples here - \\DESKTOP-MDL5AP0\iesd\Sales & Marketing\Samples\Transcreation Samples)
+
+
+________________
+
+
+Email Playbook
+
+
+Quick Question Email Templates
+
+
+HARD RULES:
+1. Subject line is always “quick question” in lowercase.
+2. Always use the same email chain when you send QQ #2, #3, etc. Never start a new email chain on follow-ups.
+3. Always include your e-signature.
+
+
+QQ Target = Advertising and Creative Agencies
+
+
+1. Initial Email (QQ #1)
+
+
+Hi Alice M.,        
+
+
+It’s my understanding that you’re an [title] at [agency name].  My company - InterEcho - helps agencies with cultural strategy and we translate campaigns and creative content into other languages.  
+
+
+If I’m correct in thinking that your clients want multilingual or international creative alongside the English you produce, what would be the best way to engage with your teams to see if we can help in any way?   
+
+
+Best,
+Nick
+
+
+2. QQ #2
+* send 1 week after your initial email if you don’t get a response.
+
+
+Hi [first name],
+
+
+I’m still hoping to connect with you on the below.  I’m assuming you might not handle this personally, but I’d love to connect with the person at your agency who does.  What’s the best way to engage with your production or account teams?
+
+
+Thanks,
+Nick
+[your name]
+[email e-signature]f
+
+
+
+
+3. QQ #3
+* send 1 week after your QQ #2 if you don’t get a response.
+
+
+Hi [first name],
+
+
+I hope all is well.  Any chance you have some time to connect this week to discuss multilingual campaigns for your clients?  If you only deal with English, I am happy to stop e-mailing you so let me know.  Thanks!
+
+
+Best,
+[your name]
+[your e-signature]
+
+
+QQ Target = Marketing Departments
+
+
+1. Initial Email (QQ #1)
+
+
+Hi [first name],
+
+
+It’s my understanding that you’re an [title] at [company name].  My company - InterEcho - helps marketers with cultural strategy and we translate campaigns and marketing content into other languages.  
+
+
+If I’m correct in thinking that you have a hand in crafting the messaging for your international customers, what would be the best way to engage with your team to see if we can help in any way?   
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+2. QQ #2
+* send 1 week after your initial email if you don’t get a response.
+
+
+Hi [first name],
+
+
+I’m still hoping to connect with you on the below.  I’m assuming you might not handle this personally, but I’d love to connect with the person at your company who does.  What’s the best way to engage with your branding or marketing teams?
+
+
+Thanks,
+Nick
+[your name]
+[email e-signature]
+
+
+
+
+3. QQ #3
+* send 1 week after your QQ #2 if you don’t get a response.
+
+
+Hi [first name],
+
+
+I hope all is well.  Any chance you have some time to connect this week to discuss international campaigns?  If you only deal with English, I am happy to stop e-mailing you so let me know.  Thanks!
+
+
+Best,
+[your name]
+[your e-signature]
+
+
+________________
+
+
+QQ Target = Training Departments
+
+
+1. Initial Email (QQ #1)
+
+
+Hi [first name],
+
+
+It’s my understanding that you’re an [title] at [company name].  My company - InterEcho - helps brands with global training initiatives and translate eLearning and related content into other languages.  
+
+
+If I’m correct in thinking that you produce multilingual training content for your global employee or customer base, what would be the best way to engage with your team to see if we can help in any way?   
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+2. QQ #2
+* send 1 week after your initial email if you don’t get a response.
+
+
+Hi [first name],
+
+
+I’m still hoping to connect with you on the below.  I’m assuming you might not handle this personally, but I’d love to connect with the person at your company who does.  What’s the best way to engage with your training content creators?  
+
+
+Thanks,
+Nick
+[your name]
+[email e-signature]
+
+
+
+
+3. QQ #3
+* send 1 week after your QQ #2 if you don’t get a response.
+
+
+Hi [first name],
+
+
+I hope all is well.  Any chance you have some time to connect this week to discuss international training initiatives?  If you only deal with English, I am happy to stop e-mailing you so let me know.  Thanks!
+
+
+Best,
+[your name]
+[your e-signature]
+
+
+
+
+
+
+QQ Target = Paid Search & Paid Social Departments
+
+
+*These should be very targeted emails towards people that handle these campaigns (for instance, Director: Paid Search and Paid Social)
+
+
+1. Initial Email (QQ #1)
+
+
+Hi [first name],                                                                                                                                                                             
+
+
+It’s my understanding that you’re an [title] at [agency name].  My company - InterEcho - helps agencies adapt paid search and paid social campaigns into other languages.  
+
+
+If I’m correct in thinking that your clients want multilingual or international campaigns alongside the English you manage, what would be the best way to engage with your teams to see if we can help in any way?   
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+2. QQ #2
+* send 1 week after your initial email if you don’t get a response.
+
+
+Hi [first name],
+
+
+I’m still hoping to connect with you on the below.  If this isn’t something you would handle personally, I’d love to connect with the person at your agency who does.  What’s the best way to engage with your team?
+
+
+Thanks,
+[your name]
+[email e-signature]
+
+
+
+
+3. QQ #3
+* send 1 week after your QQ #2 if you don’t get a response.
+
+
+Hi [first name],
+
+
+I hope all is well.  Any chance you have some time to connect this week to discuss multilingual paid search and paid social campaigns for your clients?  If you only deal with English, I am happy to stop e-mailing you so let me know.  Thanks!
+
+
+Best,
+[your name]
+[your e-signature]
+
+
+________________
+
+
+Responses to QQ Emails
+
+
+RESPONSE = “I have these needs and I’d like to better understand what you offer.”
+
+
+* IMPORTANT - Attach Capabilities Deck
+
+
+Hi [first name],
+
+
+It’s nice to connect with you.  I have attached our capabilities deck to this e-mail.  The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Assuming these needs come up for you, I’d love to have a quick intro call to explore how we can potentially work together.  Let me know your availability and we’ll schedule it.
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+________________
+
+
+RESPONSE = “Send me more info and your pricing.”
+
+
+* IMPORTANT – attach Capabilities Deck
+
+
+Hi [first name],
+
+
+It’s nice to connect with you.  I have attached our capabilities deck to this e-mail.  Below is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+I understand you’re trying to get a better feel for our pricing.  Our rates are contingent on many different factors including target language, creativity of the copy, deadline, overall volume, usage, etc., so we don’t have a general rate card per se.  The best way is to provide us with some content and we’ll provide you with a detailed cost proposal.  If you don’t have anything immediate, we’d be happy to quote on a past or mock project so that you can better compare us to your current solution.   
+
+
+Best,
+[your name]
+[email e-signature] 
+
+
+________________
+
+
+RESPONSE = “I have these needs and I’ll keep your information handy.”  
+
+
+* IMPORTANT – Update subject line to “International Language Translation (InterEcho)” and attach Capabilities Deck. Schedule a follow up task in Zoho to check in with them in the future.
+
+
+Hi [first name],
+
+
+It’s great to connect with you.  I’ve attached our capabilities deck and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  
+
+
+I’m available for a call at your convenience should you want to learn more or if a need pops up. I’ve updated our email subject line for an easier inbox search down the road.     
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Enjoy your day!
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+________________
+
+
+RESPONSE = “I will share your info with my team.”
+
+
+* IMPORTANT – Update subject line to “International Language Translation (InterEcho)” and attach Capabilities Deck.
+
+
+Thanks, [first name].  I appreciate you sharing our information with your team! I’ve attached our capabilities deck and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.    
+
+
+I’ve also updated our email subject line for an easier inbox search down the road.  
+
+
+If anyone from your team wants to learn more, they can reach out to me and we’ll set up some time to speak. Here is a short list of our services:     
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Enjoy your day!
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+________________
+
+
+RESPONSE = “This isn’t my area, but I’ve copied my colleague that handles this.” 
+
+
+* IMPORTANT –Attach Capabilities Deck. Forward your reply to Nick Koumaris so that he can create a follow-up task if the referral doesn’t get back to you.
+
+
+Thanks, [first name].  
+
+
+Hi [colleague’s first name], it’s nice to meet you. I’ve attached our capabilities deck and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  
+
+
+Below is a short list of our services. If these needs come up for you, I’d love to schedule an intro call to see if we can help. 
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+I look forward to hearing from you.
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+________________
+
+
+RESPONSE = “This isn’t my area, but you should reach out to [colleague’s name]”
+
+
+Thanks, [first name]!  I appreciate the referral, and I’ll reach out to [colleague’s first name].
+
+
+For your reference, the following is a short list of our services if you ever need to deal with this directly.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Thanks,
+[your name]
+[email e-signature]
+
+
+
+
+Send Email to the colleague that was referred (if Agency)
+
+
+Subject line – Referral from [full name of referrer] 
+
+
+Hi [colleague’s first name],
+
+
+I was speaking with [referrer’s first name] earlier and it’s my understanding that you’re responsible for translating your agency’s campaigns into other languages. My company - InterEcho – specializes in this and we work primarily with agencies that need help adapting creative content that doesn’t easily translate. 
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.    
+     
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Assuming these needs come up for you, I’d love to have a quick intro call to explore how we can potentially work together. 
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+Send Email to the colleague that was referred (if Marketing Department)
+
+
+Subject line – Referral from [full name of referrer] 
+
+
+Hi [colleague’s first name],
+
+
+I was speaking with [referrer’s first name] earlier and it’s my understanding that you’re responsible for translating your company’s marketing campaigns and content into other languages.  My company - InterEcho – specializes in this and we work primarily with marketers that need help adapting creative content that doesn’t easily translate.  
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.    
+     
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Assuming these needs come up for you, I’d love to have a quick intro call to explore how we can potentially work together. 
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+RESPONSE = “I don’t have these needs.”
+
+
+* IMPORTANT – Update subject line to “International Language Translation (InterEcho)”
+
+
+Thanks, [first name].  It’s nice to connect nonetheless. The following is a short list of our services if the need pops up, and I’ve also updated our email subject line for an easier inbox search down the road.  
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+________________
+RESPONSE = “We have an internal team that handles this.” 
+
+
+Hi [first name],
+
+
+It’s nice to connect nonetheless. We work with a number of agencies through their internal localization teams, as most of them utilize outsourced partners like us. Would you mind forwarding this email to the person in charge of that team or making an introduction?   
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.    
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+RESPONSE = “We already have a provider.”
+
+
+* IMPORTANT – Update subject line to “International Language Translation (InterEcho)”
+
+
+Thanks, [first name].  It’s nice to connect nonetheless.  Should you ever need a second option or find yourself in a pinch, the following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+
+
+________________
+
+
+RESPONSE = “My agency is part of [holding company] and we have internal partners that handle this.”
+
+
+* IMPORTANT – Update subject line to “International Language Translation (InterEcho)”
+
+
+Hi [first name],
+
+
+It’s nice to connect with you nonetheless.  We currently work with a few other [holding company] agencies when their internal partners are busy. If you ever find yourself in a pinch, please feel free to lean on us accordingly.  
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  I’ve also updated our email subject line for an easier inbox search down the road.      
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+RESPONSE = “Stop emailing me”
+
+
+Hi [first name],
+
+
+I’ve removed you from our target list.  Should you ever have needs for the following services, please reach out to us.  
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+Emails to use after discovery calls and to deliver bids
+
+
+After a discovery call (with samples included)
+- pull the most applicable sample from IESD > Sales > Samples > Transcreation Samples
+- attach our creds deck
+
+
+Hi [first name]
+
+
+Nice to chat with you earlier and thanks again for taking a few minutes!
+
+
+I’ve attached our creds deck, which contains a bit more detail on our services and links to some work samples. I have also attached an example of our Transcreation deliverable, which is what you can expect to receive from us when we’re translating any ad copy for scripts, banners, social posts, etc. This example is part of a social campaign we did for Facebook to promote their Instagram Stories feature globally. Although the headlines simple enough, you’ll see the level of care we take to ensure the translations play well in each market. Literal translations of this copy would have proved problematic.
+
+
+As discussed, we focus exclusively on adapting creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural relevance in mind. We work on all types of content, including TV commercials, print, websites, social posts, and digital ads. With end-to-end production capabilities, including global VO, audio design, and video services, we’re quite a bit different than a general translation company that’s not well equipped to handle native creative assets from start to finish. They also tend to translate ad copy way too literally, so the intended spirit and messaging gets lost. Our goal is to deliver accurate and culturally relevant content that feels as if was originally drafted and produced in the target language.
+
+
+From a cost standpoint, I’m happy to provide a mock bid so that you can get a better feel for how we price services. Most of our clients have a lot of nuances in their specs and requirements, so we don’t really have a rate card in the traditional sense, but we can certainly establish something for [client/agency] specifically so that you can more easily budget for work coming down the pike.
+
+
+Here is a short list of our services and I appreciate your willingness to share this with your Producers and colleagues.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Global Voice Talent Casting, Voiceovers & Dubbing
+-  Bilingual Directors & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Looking forward to staying in touch and finding something to work on together!
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+________________
+To include when you email a first time bid
+- pull the most applicable sample from IESD > Sales > Samples > Transcreation Samples
+- attached our creds deck
+
+
+Hi [first name],
+
+
+Attached is the bid to [description]. 
+
+
+To better highlight what you can expect to receive from us as a copy deliverable, I have attached an example of our transcreation deck for [description – pull the most applicable one from our available samples]. In addition to the [target language] copy, our translation deliverables will always include English back-translations and rationale from our transcreation teams so that your creatives have a deeper understanding of how we adapted their copy. You’ll see the level of care we take to ensure the translations play well in each market, as literal translations are typically problematic and don’t take cultural relevance into account. We’re quite a bit different than most general translation companies in this regard.
+
+
+In addition, I have attached our creds deck that details a bit more about us. We focus exclusively on adapting creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural relevance in mind. We work on all types of content, including TV commercials, print, websites, social posts, and digital ads. With end-to-end production capabilities, we are different than most translation companies that are not well equipped to handle native creative assets from start to finish. They also tend to translate ad copy way too literally, so the intended spirit and messaging gets lost. Our goal is to deliver accurate and culturally relevant content that feels as if was originally drafted and produced in the target language.
+
+
+Let me know if you have any questions or if I can provide any further details. I’m looking forward to working with you on something!
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+Emails when we lose
+
+
+Loss email with creds deck attached (use this if they haven’t seen our deck before)
+
+
+Hi [first name],
+
+
+Well that is a bummer, but we certainly understand and thank you for closing the loop. If you all bump into any issues with them and need us for any spillover work, please do not hesitate to reach out. We will support with whatever you might need.
+
+
+Please keep us in mind for the following services. I have also attached our creds deck with a bit more info about us.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+Loss email with no deck attached (use this if they already know some things about us)
+
+
+Hi [first name],
+
+
+Well that is a bummer, but we certainly understand and thank you for closing the loop. If you all bump into any issues with them and need us for any spillover work, please do not hesitate to reach out. We will support with whatever you might need.
+
+
+Please keep us in mind for the following services. We look forward to working with you in the future!
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+
+
+Check-In Emails
+
+
+
+
+What’s New (existing lead)
+
+
+My agency bid on a project for you last year to [transcreate and voiceover a :30 into French]. We didn’t win the award, but I wanted to get back on your radar in case you still have similar multilingual needs. 
+
+
+Here is a link some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. Our focus has been on global VO production, video and website localization, and copy transcreation.
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+What’s New (dormant client)
+
+
+My agency [provided some Russian translations for your Burger King account last year]. We haven’t heard from you in a while and I wanted to get back on your radar in case you still have similar multilingual needs.
+
+
+Here is a link some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. Our focus has been on global VO production, video and website localization, and copy transcreation.
+
+
+Please keep us in mind for this type of support if it pops up for you. 
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+What’s New (dormant Business Affairs client)
+
+
+My agency [provided some Russian translations for your Burger King account last year and you helped onboard us as a new vendor.] We haven’t heard from you in a while and I wanted to get back on your radar in case you still have similar multilingual needs.
+
+
+Here is a link some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. Our focus has been on global VO production, video and website localization, and copy transcreation.
+
+
+Would you mind sharing this with your production and account teams so they can keep us in mind?
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+
+
+
+
+What’s New (existing regular client)
+
+
+We haven’t heard from you in a while so I wanted to check in to see what’s new? I hope you’re doing well. If you ever need transcreation help with [Amazon or others], keep us in mind.
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+What’s New (didn’t have immediate needs at the time)
+
+
+Hi first name,
+
+
+We connected briefly last [enter month]. You didn’t have any immediate needs for global campaign support at the time, but I wanted to stay on your radar in case that changes. 
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+
+
+
+
+
+
+________________
+
+
+Already had a partner at the time
+
+
+Hi [first name],
+
+
+We connected briefly last [enter month]. You already had an existing provider for global campaign support, but I wanted to stay on your radar in case that changes. 
+
+
+The following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+Asked you to follow up later in the year
+
+
+
+
+Hi [first name],
+
+
+We connected briefly last [enter month]. You didn’t have any immediate needs for global campaign support at the time, but you asked me to check back in with you. As a reminder, the following is a short list of our services and you can also view some of our recent campaign transcreation work here - https://interecho.com/our-work/.  
+
+
+If these needs are now coming up for you, I’d love to schedule an intro call to see if we can help.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+Best,
+[your name]
+[email e-signature]
+________________
+
+
+Blurbs for Email about Capabilities, Services, Etc.
+
+
+“What do you do?”
+
+
+InterEcho is solely focused on adapting English creative into other languages – content that does not easily translate and needs a much more holistic approach with cultural appropriateness in mind. Translation companies tend to be way too literal when handling ad copy, and they rarely offer VO and video production services to see it all the way through, so we have filled this void for creative agencies specifically.
+
+
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. 
+
+
+Our main offerings are global VO production, video and website localization, and copy transcreation.
+
+
+I’d appreciate you sharing this with your production teams. Please keep us in mind should any international challenges present themselves.
+
+
+“Tell Me More About Your Services”
+
+
+We’re quite a bit different than most translation companies that tend to service a lot of various industries and departments.  We’re focused strictly on marketing and advertising content, so our processes are designed to accommodate creative copy that doesn’t easily translate, as well as expedited deadlines that most advertisers must work under. We also have full-service production capabilities, so we regularly work with our client’s native creative assets and video masters so the work we deliver is market-ready.
+
+
+We don’t really “translate” content per se.  Our resources are local copywriters that produce culturally relevant content that feels genuine and fluid in the target market.  Our goal is for the content we deliver to feel like it was originally crafted in the target language.  All of our linguistic resources are native-speakers of the target language and they reside in country to ensure the most current knowledge of cultural nuances, language proficiency, and local industry terminology. 
+
+
+Attached is our capabilities deck and here is a link to some of our recent campaign transcreation work to give you a feel for what we’re producing – https://interecho.com/our-work. 
+
+
+
+
+I don’t want to hear anymore. Just tell me your per word rates!
+
+
+Cost for copy transcreation can range anywhere from $0.18/word to $0.42/word depending on target language, content volume, and deliverable requirements. To add some more perspective to this, I have attached an example of our transcreation deck, which is what you can expect to receive from us for in-language copy. 
+
+
+Unlike most general translation companies, we always include English back-translations and commentary explaining our word choices so that you fully understand how the messaging is handled for each market.  Since we’re solely focused on adapting marketing and advertising content that is culturally nuanced and can’t be translated literally, the linguistic resources we utilize are more like in-language copywriters versus translators.
+
+
+I have also included our capabilities deck and the following is a short list of our services. I appreciate your willingness to pass along our information to the appropriate parties.
+
+
+-  Cultural Strategy
+-  Copy Transcreation & Translation
+-  Multilingual Voice Talent Casting, Voiceovers & Dubbing
+-  On-Site Bilingual Producers & Post Supervisors
+-  Video Editing & Subtitling
+-  Web, Social, & Mobile Localization
+-  Global SEO and SEM
+
+
+(Use the transcreation examples here - \\DESKTOP-MDL5AP0\iesd\Sales & Marketing\Samples\Transcreation Samples)
+
+
+
+
+
+
+
+
+________________
+
+
+Linked-In Playbook
+
+
+General Connection Requests (if they looked at you)
+
+
+Message for Advertising Agencies
+
+
+I saw we visited each other’s profiles. My agency helps advertisers transcreate their campaigns and creative content into other languages. We also provide cultural strategy and full-service production. If you ever need help with this, please feel free to reach out.
+
+
+Message for Marketing
+
+
+I saw we visited each other’s profiles. My agency provides creative translation services for global ad campaigns, web, and video.  We also help brands navigate the cultural and regulatory hurdles of expanding globally. If I can ever help you with anything, let me know. 
+
+
+Message for Training
+
+
+I saw we visited each other’s profiles. My agency provides creative translation services for global training and eLearning initiatives. If I can ever help you with anything, let me know.
+
+
+
+
+
+
+________________
+
+
+Specific Connection Requests
+
+
+Message for Account Directors
+
+
+I saw we visited each other’s profiles. My company helps agencies creatively translate their ad campaigns into other languages. We provide cultural strategy, transcreation, and full-service production. If you ever need help with this, please feel free to reach out.
+Message for Agency Producers
+
+
+I saw we visited each other’s profiles. My company provides cultural strategy and creative translation services for global campaigns. We also support producers with bilingual supervisors and international voice talent.  If I can ever help you with anything, let me know.
+
+
+Message for Video/Digital Producers
+
+
+I saw we visited each other’s profiles. My agency provides creative translation services for video and digital content.  We also help marketers with cultural strategy for global campaigns.  If I can ever help you with anything, let me know.
+  
+
+
+Message for Corporate Marketing Departments
+
+
+I saw we visited each other’s profiles. My agency provides cultural strategy and creative translations for global marketing campaigns. We also help brands navigate the cultural and regulatory hurdles of expanding globally. If I can ever help you with anything, let me know.
+________________
+
+
+People Who Connect first 
+
+
+Soft First Response
+
+
+Hi [first name],
+
+
+It's nice to connect with you. If I can ever help you with anything, let me know.
+
+
+Enjoy your day! 
+
+
+Best,
+Nick
+
+
+
+
+Targeted Response 
+
+
+Hi [first name],
+
+
+It's nice to connect with you.  (Add something about what they do or like and make a compliment out of it.  Review recent posts/interests to find something unique to mention)     
+
+
+I run a transcreation agency called InterEcho (https://interecho.com/). We provide cultural strategy and creative translation services for ad campaigns and marketing content.  Our objective is to produce content that feels authentic, local, and fluid in the target market versus simply translating it literally.  
+
+
+If I can ever help you with anything, please do not hesitate to reach out.
+
+
+Best,
+Nick
+
+
+nick@interecho.com | nick@poworldwide.com | (213) 221-4576
+What is transcreation?
+
+
+Transcreation is the process of adapting creative content into another language. When transcreating content, we rework the copy to ensure it feels organic, accessible, and genuine to the target audience. It differs from a more literal translation process in that it is strictly focused on creative content and is intended to capture the full intended meaning and tone of the original source content. You can think about in the same way as you would think about the difference between basic business writing and copywriting.
+________________
+
+
+General Check-in Messages
+General Check-in for Advertisers
+
+
+Hi [first name],
+
+
+I hope you’re well!  I figured I’d check in to see what’s new with you.  
+
+
+My agency – InterEcho – has had an exciting year.  We recently worked on the (campaign name) campaign and I wanted to share a few examples of our work.
+
+
+(share something relevant)  
+
+
+I’d love to hear what you’re up to as well.  If I can ever help you with anything, never hesitate to reach out.  
+
+
+Best,
+Nick  
+________________
+
+
+Targeted Check-in Messages
+ 
+For Agency contacts 
+
+
+Hi [first name],
+
+
+We connected a while back and I hope you’re well. As a reminder, I run a transcreation agency called InterEcho. We provide creative translation, global VO and video localization for ad campaigns and marketing content. Should these needs ever pop up for you, please keep us in mind.
+
+
+You can view some of our recent global campaign work here - https://interecho.com/our-work/
+
+
+Best,
+Nick
+For Corporate Marketing contacts 
+
+
+Hi [first name],
+
+
+We connected a while back and I hope you’re well. As a reminder, I run a transcreation agency called InterEcho. We provide creative translation and global voiceover and video localization for digital campaigns, marketing content and websites. Should these needs ever pop up for your teams, please keep us in mind.
+
+
+You can view some of our recent global campaign work here - https://interecho.com/our-work/
+
+
+Best,
+Nick
+
+
+Seasonal Check-in
+
+
+Hi [first name],
+
+
+I hope you’ve had a nice summer!  I figured I’d check back in with you since we connected in June.  Not sure if you have any international campaigns on the horizon as we roll through the back half of the year.  Keep us in mind should you ever need multilingual support.   
+
+
+Best,
+Ryan
+
+
+
+
+New Job Check-in
+
+
+Hi [first name],
+
+
+I hope you’re well!  Congrats on your new position at (new company name).  It’s always exciting to embark on a new professional path.  I’m hoping to stay connected with you.  As a reminder, I run a transcreation agency called InterEcho (https://interecho.com/). We provide cultural strategy and creative translation services for ad campaigns and marketing content.  Should this come up from you at (new company name), please keep me in mind.  I’d love to work on something together.
+
+
+Best,
+Ryan

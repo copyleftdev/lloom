@@ -1,0 +1,45 @@
+metadata:
+  title: Query your sales playbook
+  version: 1.0
+  last_updated: "2023-07-20"
+  author: "joshuacook"
+  description: "Query our sales playbook using GPT"
+
+entities:
+  stores: 
+    sales_playbook_db:
+      collection: sales_playbook
+      provider: chroma
+      embedding_model: openai/ada
+  datasets:
+    sales_playbook_raw:
+      source: ./tests/sales-playbook.txt
+      format: txt
+      tokens_per_document: 256
+      token_overlap: 32
+      store: sales_playbook_db
+
+agents:
+  helpful_assistant:
+    model: openai/gpt-3.5-turbo-0613
+    system_statement: "I am an AI with a specialty in supporting our sales team. How can I assist you today?"
+    prompt: |
+      Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+      {{context}}
+
+      Question: {{query}}
+      Helpful Answer:
+    input:
+      - context
+      - query
+
+routine:
+  trigger: user_input
+  steps:
+    - name: retrieve_relevant_documents
+      store: sales_playbook_db
+      k_neighbors: 5
+      algorithm: cosine_similarity
+    - name: chat
+      agent: helpful_assistant

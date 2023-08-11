@@ -1,7 +1,7 @@
 import chromadb
 import yaml
 
-from .agent import ChatModel
+from .agent import Agent
 from .dataset.textfile_dataset import TextfileDataset
 
 
@@ -22,7 +22,6 @@ class Parser:
 
 class Migration(Parser):
     def __init__(self, yaml_data=None, file_path=None):
-
         super().__init__(yaml_data=yaml_data, file_path=file_path)
 
         entities = self.data.get("entities", {})
@@ -45,13 +44,6 @@ class Migration(Parser):
 
             if dataset_info["format"] == "txt":
                 dataset = TextfileDataset(
-                    source=dataset_info["source"],
-                    tokens_per_document=dataset_info["tokens_per_document"],
-                    token_overlap=dataset_info["token_overlap"],
-                    collection=collection,
-                )
-            elif dataset_info["format"] == "pdf":
-                dataset = PDFDataset(
                     source=dataset_info["source"],
                     tokens_per_document=dataset_info["tokens_per_document"],
                     token_overlap=dataset_info["token_overlap"],
@@ -115,11 +107,12 @@ class Supervisor(Parser):
         super().__init__(yaml_data, file_path)
 
         agents_data = self.data.get("agents", {})
+        routine_data = self.data.get("routine", {})
 
         self.agents = self._load_agents(agents_data)
+        self.routine = self._load_routine(routine_data)
 
     def _load_agents(self, agents_data):
-
         agent_objects = {}
         for agent_name, agent_info in agents_data.items():
             model = agent_info["model"]
@@ -127,14 +120,18 @@ class Supervisor(Parser):
             input = agent_info["input"]
             system_statement = agent_info.get("system_statement", None)
 
-            agent = {
-                "model": model,
+            agent_properties = {
+                "name": model,
                 "prompt": prompt,
                 "input": input,
                 "system_statement": system_statement,
             }
-            agent_objects[agent_name] = agent
+            agent_objects[agent_name] = Agent(**agent_properties)
         return agent_objects
+
+    def _load_routine(self, routine_data):
+        self.trigger = routine_data["trigger"]
+        self.steps = routine_data["steps"]
 
 
 class Lloom(Migration, Supervisor):
@@ -158,3 +155,25 @@ class Lloom(Migration, Supervisor):
     def _parse_metadata(self, metadata_data):
         for key, value in metadata_data.items():
             setattr(self, key, value)
+
+    def run(self, trigger_value):
+        for step in self.steps:
+            if step["name"] == "retrieve_relevant_documents":
+                collection_name = step["store"]
+                collection = self.stores[collection_name]
+                results = collection.query(
+                    query_texts=trigger_value,
+                    include=["documents"],
+                    n_results=5,
+                )
+            if step["name"] == "chat":
+                agent_name = step["agent"]
+                agent = self.agents[agent_name]
+
+                values = {
+                    "context": "\n".join(results["documents"][0]),
+                    "query": trigger_value,
+                }
+                prompt = agent.prepare_prompt(values)
+                output = agent.generate_response(prompt)
+        return output

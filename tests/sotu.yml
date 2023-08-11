@@ -3,7 +3,7 @@ metadata:
   version: 1.0
   last_updated: "2023-07-15"
   author: "joshuacook"
-  description: "Query the President's State of the Union address using GPT, despite it not being present in the training data."
+  description: "Query the President's State of the Union address using GPT."
 
 entities:
   stores: 
@@ -36,13 +36,12 @@ agents:
       - context
       - query
 
-routines:
-  query_the_sotu:
-    trigger: user_input
-    steps:
-      retrieve_relevant_documents:
-         store: sotu_db
-         k_neighbors: 5
-         algorithm: cosine_similarity
-      chat:
-         agent: helpful_assistant
+routine:
+  trigger: user_input
+  steps:
+    - name: "retrieve_relevant_documents"
+      store: sotu_db
+      k_neighbors: 5
+      algorithm: cosine_similarity
+    - name: "chat"
+      agent: helpful_assistant

@@ -4,8 +4,9 @@ from lloom.agent import Agent
 
 
 class SimpleChatModel:
-    def generate(self, prompt):
-        return prompt
+    def create(self, **kwargs):
+        response = kwargs["messages"][1]["content"]
+        return {"choices": [{"message": {"content": response}}]}
 
 
 @pytest.fixture
@@ -15,7 +16,13 @@ def agent():
     system_statement = "I am an AI with a specialty in American political science. How can I assist you today?"  # noqa: E501
     prompt = "Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\n\n{{context}}\n\nQuestion: {{query}}\nHelpful Answer:"  # noqa: E501
     input_keys = ["context", "query"]
-    return Agent(name, model, system_statement, prompt, input_keys)
+    return Agent(
+        name=name,
+        model=model,
+        system_statement=system_statement,
+        prompt=prompt,
+        input=input_keys,
+    )
 
 
 def test_agent_prepare_prompt(agent):

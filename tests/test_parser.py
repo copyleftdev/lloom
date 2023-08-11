@@ -5,7 +5,7 @@ from lloom.dataset.textfile_dataset import TextfileDataset
 
 
 def test_migration():
-    m = Migration(file_path="tests/sotu.yml")
+    m = Migration(file_path="tests/sotu-small.yml")
     m.run_migration()
 
     assert isinstance(m.datasets["sotu_raw"], TextfileDataset)

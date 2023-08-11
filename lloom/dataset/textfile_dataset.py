@@ -12,11 +12,13 @@ class TextfileDataset:
         tokens_per_document: int,
         token_overlap: int,
         collection: Collection,
+        count: int = None,
     ):
         self.source = source
         self.tokens_per_document = tokens_per_document
         self.token_overlap = token_overlap
         self.collection = collection
+        self.count = count
 
     def load(self):
         file_paths = glob.glob(self.source)

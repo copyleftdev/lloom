@@ -61,5 +61,3 @@ def test_load_textfile_dataset_openai(test_collection_openai):
 
     ids = dataset.load()
     assert len(ids) == 1
-
-

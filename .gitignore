@@ -1,6 +1,8 @@
 __pycache__
 .coverage*
 db
+/.idea
+/.vscode
 test_db
 .DS_Store
 .ipy*
